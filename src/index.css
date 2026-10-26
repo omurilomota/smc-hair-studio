@@ -350,7 +350,7 @@ h2 {
 .hero-image {
   position: absolute;
   inset: 0;
-  background: url("/images/hero-oficio.jpg") center / cover;
+  background: url("https://images.pexels.com/photos/18503604/pexels-photo-18503604.jpeg?auto=compress&cs=tinysrgb&w=1600") center / cover;
   animation: heroEnter 1.25s cubic-bezier(0.2, 0.7, 0.2, 1) both;
 }
 @keyframes heroEnter {

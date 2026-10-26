@@ -68,10 +68,10 @@ export const longestServiceMin = services.reduce(
 );
 
 export const barber = {
-  name: "Samuca",
-  firstName: "Samuca",
+  name: "Barbeiro",
+  firstName: "Barbeiro",
   role: "Barbeiro",
-  photo: "/images/team-rafa.jpg",
+  photo: "https://i.pravatar.cc/400?img=12",
 };
 
 export interface GalleryItem {
@@ -130,14 +130,14 @@ export const gallery: GalleryItem[] = [
  * scrapers. Ele só existe dentro de links (wa.me) — nunca é exibido como
  * texto no site e não vai para o JSON-LD.
  */
-const WA_PARTS = ["55", "18", "99610", "8963"];
+const WA_PARTS = ["55", "11", "99999", "9999"];
 const whatsappNumber = WA_PARTS.join("");
 
 /**
  * Handle do Instagram, montado em partes pelo mesmo motivo: só existe dentro
  * do href, nunca aparece escrito na página.
  */
-const IG_USER = ["samuel", "rods"].join(".");
+const IG_USER = ["usuario", "exemplo"].join(".");
 
 export interface StudioDayHours {
   open: number;
@@ -165,16 +165,16 @@ export const hoursConfig: StudioHoursConfig = {
 };
 
 export const config = {
-  brand: "SMC",
-  brandFull: "SMC HAIR STUDIO",
+  brand: "BARBEARIA",
+  brandFull: "BARBEARIA EXEMPLO",
   whatsappNumber,
   waLink: (message: string) =>
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
-  street: "Rua Ipiranga, 1110",
-  district: "Alto do Cene · Junqueirópolis/SP · CEP 17890-000",
+  street: "Rua Exemplo, 123",
+  district: "Bairro · Cidade/UF · CEP 00000-000",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Rua+Ipiranga+1110+Junqueiropolis+SP",
-  wazeUrl: "https://waze.com/ul?q=Rua+Ipiranga+1110+Junqueiropolis+SP",
+    "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Cidade+UF",
+  wazeUrl: "https://waze.com/ul?q=Rua+Exemplo+123+Cidade+UF",
   instagramUrl: `https://www.instagram.com/${IG_USER}/`,
   /**
    * Atenção: tudo que começa com VITE_ é embutido no bundle pelo Vite, então

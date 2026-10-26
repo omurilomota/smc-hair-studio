@@ -21,3 +21,10 @@ Thumbs.db
 
 # Kilo
 .kilo/
+# Lockfile (opcional)
+package-lock.json
+
+# Assets reais de clientes (não versionar)
+public/images/team-*.jpg
+public/images/hero-oficio.jpg
+public/images/espaco.jpg
