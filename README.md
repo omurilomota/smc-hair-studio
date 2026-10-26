@@ -8,9 +8,13 @@ Site institucional + agendamento leve para barbearias. React 19, Vite 7, Tailwin
 
 ```bash
 npm install
-cp .env.example .env.local
 npm run dev
 ```
+
+Variáveis de ambiente (opcionais, crie um `.env.local` se precisar):
+
+- `VITE_OWNER_PIN` — PIN do painel do barbeiro (padrão `2024`).
+- `VITE_SEED_DEMO` — `true` para popular o painel com pedidos de exemplo.
 
 Build de produção:
 
