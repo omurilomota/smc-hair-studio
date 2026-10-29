@@ -79,7 +79,7 @@ describe("utilitários", () => {
   });
 
   it("formata telefone brasileiro com DDD", () => {
-    expect(formatPhone("18987651122")).toBe("(18) 98765-1122");
+    expect(formatPhone("18999990119")).toBe("(18) 99999-0119");
     expect(formatPhone("1833334444")).toBe("(18) 3333-4444");
     expect(formatPhone("18")).toBe("(18");
     expect(formatPhone("")).toBe("");
