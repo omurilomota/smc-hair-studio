@@ -1996,6 +1996,56 @@ button {
   }
 }
 
+/* ---------- Aviso de demonstração ---------- */
+.demo-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 220;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgb(10 12 8 / 0.72);
+  backdrop-filter: blur(4px);
+}
+.demo-dialog {
+  width: min(100%, 460px);
+  border: 1px solid var(--line-d);
+  background: var(--panel);
+  color: var(--paper);
+  padding: 32px;
+}
+.demo-dialog-kicker {
+  margin: 0 0 10px;
+  font-family: var(--cond);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--lime);
+}
+.demo-dialog h2 {
+  margin: 0 0 16px;
+  font-family: var(--cond);
+  font-size: clamp(24px, 4vw, 30px);
+  font-weight: 700;
+  line-height: 1.1;
+}
+.demo-dialog p {
+  margin: 0 0 12px;
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--muted-d);
+}
+.demo-dialog-close {
+  margin-top: 12px;
+  border: 0;
+  background: var(--lime);
+  color: var(--lime-ink);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 22px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

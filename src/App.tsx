@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import Booking from "./components/Booking";
+import { DemoNotice } from "./components/DemoNotice";
 import OwnerPanel from "./components/OwnerPanel";
 import { barber, config, gallery, money, services } from "./data";
 import type { ServiceCategory } from "./data";
@@ -542,6 +543,8 @@ export default function App() {
         now={now}
         onClose={() => setOwnerOpen(false)}
       />
+
+      <DemoNotice />
 
       <a
         className="wa-float"

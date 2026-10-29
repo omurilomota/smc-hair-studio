@@ -1,12 +1,15 @@
 {
-  "name": "react-vite-tailwind",
+  "name": "smc-hair-studio",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "clsx": "2.1.1",
@@ -23,6 +26,8 @@
     "tailwindcss": "4.1.17",
     "typescript": "5.9.3",
     "vite": "^7.3.7",
-    "vite-plugin-singlefile": "2.3.0"
-  }
+    "vite-plugin-singlefile": "2.3.0",
+    "vitest": "^5.0.5"
+  },
+  "description": "Site de demonstração para barbearia com agendamento local e contato via WhatsApp — React, Vite e CSS próprio."
 }

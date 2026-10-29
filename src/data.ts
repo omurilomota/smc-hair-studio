@@ -68,10 +68,10 @@ export const longestServiceMin = services.reduce(
 );
 
 export const barber = {
-  name: "Barbeiro",
-  firstName: "Barbeiro",
-  role: "Barbeiro",
-  photo: "https://i.pravatar.cc/400?img=12",
+  name: "Diego Alves",
+  firstName: "Diego",
+  role: "Barbeiro e fundador",
+  photo: "/images/team-diego.jpg",
 };
 
 export interface GalleryItem {
@@ -130,7 +130,7 @@ export const gallery: GalleryItem[] = [
  * scrapers. Ele só existe dentro de links (wa.me) — nunca é exibido como
  * texto no site e não vai para o JSON-LD.
  */
-const WA_PARTS = ["55", "11", "99999", "9999"];
+const WA_PARTS = ["55", "18", "00000", "0000"];
 const whatsappNumber = WA_PARTS.join("");
 
 /**
@@ -165,16 +165,17 @@ export const hoursConfig: StudioHoursConfig = {
 };
 
 export const config = {
-  brand: "BARBEARIA",
-  brandFull: "BARBEARIA EXEMPLO",
+  brand: "SMC",
+  brandFull: "SMC HAIR STUDIO",
   whatsappNumber,
   waLink: (message: string) =>
     `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`,
-  street: "Rua Exemplo, 123",
-  district: "Bairro · Cidade/UF · CEP 00000-000",
+  street: "Rua das Acácias, 120",
+  district: "Centro · Junqueirópolis/SP · CEP 17890-000",
   mapsUrl:
-    "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Cidade+UF",
-  wazeUrl: "https://waze.com/ul?q=Rua+Exemplo+123+Cidade+UF",
+    "https://www.openstreetmap.org/search?query=Rua%20das%20Ac%C3%A1cias%2C%20120%2C%20Junqueir%C3%B3polis%20-%20SP",
+  wazeUrl:
+    "https://waze.com/ul?q=Rua%20das%20Ac%C3%A1cias%2C%20120%2C%20Junqueir%C3%B3polis%20-%20SP",
   instagramUrl: `https://www.instagram.com/${IG_USER}/`,
   /**
    * Atenção: tudo que começa com VITE_ é embutido no bundle pelo Vite, então
