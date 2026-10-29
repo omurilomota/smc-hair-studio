@@ -427,7 +427,7 @@ export default function Booking({
                     id="bk-phone"
                     value={phone}
                     onChange={(e) => setPhone(formatPhone(e.target.value))}
-                    placeholder="(11) 99999-9999"
+                    placeholder="(18) 99999-9999"
                     autoComplete="tel"
                     inputMode="tel"
                     required

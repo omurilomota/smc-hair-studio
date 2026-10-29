@@ -19,12 +19,17 @@ npm-debug.log*
 .DS_Store
 Thumbs.db
 
+# Vercel
+.vercel/
+
 # Kilo
 .kilo/
-# Lockfile (opcional)
-package-lock.json
 
-# Assets reais de clientes (não versionar)
-public/images/team-*.jpg
-public/images/hero-oficio.jpg
-public/images/espaco.jpg
+# Cobertura de testes
+coverage/
+
+# Conteúdo interno e artefatos locais (não publicar)
+ROTEIRO-APRESENTACAO.md
+_ops/
+.kilo/
+dist/
