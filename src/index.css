@@ -1240,6 +1240,15 @@ h2 {
   gap: 20px;
   padding: 32px 0;
 }
+.footer-credit {
+  padding: 0 0 18px;
+  color: #63665a;
+  font-size: 10px;
+  text-align: center;
+}
+.footer-credit a:hover {
+  color: var(--lime);
+}
 .owner-link {
   display: inline-flex;
   align-items: center;
