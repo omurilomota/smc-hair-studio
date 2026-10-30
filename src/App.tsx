@@ -461,6 +461,16 @@ export default function App() {
             {pending > 0 && <span className="owner-badge">{pending}</span>}
           </button>
         </div>
+        <div className="page-width footer-credit">
+          <a
+            href="https://wa.me/5518998133524"
+            target="_blank"
+            rel="noreferrer"
+            aria-label="Falar com Murilo Mota no WhatsApp"
+          >
+            Desenvolvido por Murilo Mota · 55 (18) 99813-3524
+          </a>
+        </div>
       </footer>
 
       {lightbox !== null && (
